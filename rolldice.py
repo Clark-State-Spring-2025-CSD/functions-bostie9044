@@ -19,3 +19,15 @@
 # How many sides? 20
 # Here are the results: [18, 19, 6, 8, 13, 6, 6, 6, 18, 12, 20, 10, 14, 8, 14, 17, 12, 15, 20, 17]
 
+import random 
+
+def RollDice(numDice, numSides):
+    results = ()
+    if numDice <= 0:
+        return "Invalid input, number of dice must be greater than 0."
+    if numSides <= 1:
+        return "Invalid input, number of sides must be greater than 1."
+    
+numDice = int(input("Enter number of dice:"))
+numSides = int(input("Enter number of sides:"))
+diceRolls = RollDice(numDice, numSides)
